@@ -16,17 +16,17 @@
   <body>
     <section class="w-full">
       <div class="custom-box mx-auto py-10 pb-10">
-        <div class="flex items-center px-8 justify-between">
-          <div class="lg:flex gap-4">
+        <div class="flex items-center px-8 justify-between flex-wrap">
+          <div class="lg:flex gap-4 items-center">
             <div class="border border-gray-600">
-              <h1 class="text-6xl pr-1 font-[600] tracking-[-5px">RUCHINA</h1>
+              <h1 class="text-6xl pr-1 font-[600] tracking-[-5px]">RUCHINA</h1>
             </div>
 
-            <ul class="flex items-center gap-4">
+            <ul class="flex flex-wrap items-center gap-4 mt-2 lg:mt-0">
               <li>
-                <a href="https://github.com/RuchinaSamuel?tab=repositories"
-                  ><i class="fab fa-github" aria-hidden="true"></i
-                ></a>
+                <a href="https://github.com/RuchinaSamuel?tab=repositories">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
               </li>
               <li>
                 <a><i class="fab fa-instagram" aria-hidden="true"></i></a>
@@ -51,33 +51,41 @@
             </ul>
           </div>
 
-          <nav class="hidden md:flex items-center gap-6 text-gray-900 text-sm">
-            <a
-              href="#experience"
-              class="hover:bg-[#383F51] hover:text-white rounded-2xl px-2 py-1"
+          <!-- Navigation Menu Wrapper -->
+          <div class="flex items-center gap-6">
+            <nav
+              class="hidden md:flex items-center gap-6 text-gray-900 text-sm"
             >
-              Experience
-            </a>
-            <a
-              href="#education"
-              class="hover:bg-[#383F51] hover:text-white rounded-2xl px-3 py-1"
-            >
-              Education
-            </a>
-            <a
-              href="#Interest"
-              class="hover:bg-[#383F51] hover:text-white rounded-2xl px-3 py-1"
-              >Interests
-            </a>
-          </nav>
+              <a
+                href="#experience"
+                class="hover:bg-[#383F51] hover:text-white rounded-2xl px-2 py-1"
+              >
+                Experience
+              </a>
+              <a
+                href="#education"
+                class="hover:bg-[#383F51] hover:text-white rounded-2xl px-3 py-1"
+              >
+                Education
+              </a>
+              <a
+                href="#Interest"
+                class="hover:bg-[#383F51] hover:text-white rounded-2xl px-3 py-1"
+              >
+                Interests
+              </a>
+            </nav>
 
-          <button id="menu-toggle" class="md:hidden text-gray-900">
-            <i data-feather="menu" class="w-6 h-6"></i>
-          </button>
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-gray-900">
+              <i data-feather="menu" class="w-6 h-6"></i>
+            </button>
+          </div>
 
+          <!-- Mobile Menu -->
           <nav
             id="mobile-menu"
-            class="hidden flex-col gap-4 text-[#7C8496] text-sm mt-4"
+            class="hidden flex flex-col gap-2 text-[#7C8496] text-sm mt-4 md:hidden"
           >
             <a
               href="#experience"
