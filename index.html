@@ -16,7 +16,7 @@
   <body>
     <section class="w-full">
       <div class="custom-box mx-auto py-10 pb-10">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center px-8 justify-between">
           <div class="lg:flex gap-4">
             <div class="border border-gray-600">
               <h1 class="text-6xl pr-1 font-[600] tracking-[-5px">RUCHINA</h1>
@@ -51,9 +51,46 @@
             </ul>
           </div>
 
-          <div>
-            <a><i class="fa fa-bars" aria-hidden="true"></i></a>
-          </div>
+          <nav class="hidden md:flex items-center gap-6 text-gray-900 text-sm">
+            <a
+              href="#experience"
+              class="hover:bg-[#383F51] hover:text-white rounded-2xl px-2 py-1"
+            >
+              Experience
+            </a>
+            <a
+              href="#education"
+              class="hover:bg-[#383F51] hover:text-white rounded-2xl px-3 py-1"
+            >
+              Education
+            </a>
+            <a
+              href="#Interest"
+              class="hover:bg-[#383F51] hover:text-white rounded-2xl px-3 py-1"
+              >Interests
+            </a>
+          </nav>
+
+          <button id="menu-toggle" class="md:hidden text-gray-900">
+            <i data-feather="menu" class="w-6 h-6"></i>
+          </button>
+
+          <nav
+            id="mobile-menu"
+            class="hidden flex-col gap-4 text-[#7C8496] text-sm mt-4"
+          >
+            <a
+              href="#experience"
+              class="block px-4 py-2 bg-[#383F51] rounded-lg"
+              >Experience</a
+            >
+            <a href="#education" class="block px-4 py-2 bg-[#383F51] rounded-lg"
+              >Education</a
+            >
+            <a href="#Interest" class="block px-4 py-2 bg-[#383F51] rounded-lg"
+              >Interests</a
+            >
+          </nav>
         </div>
       </div>
     </section>
@@ -72,12 +109,16 @@
           <h1
             class="text-[30px] md:text-[40px] leading-snug tracking-[2px] md:tracking-[3px] font-[300]"
           >
-            Hi, I am <strong>Ruchina Samuel.</strong> <br />
+            Hi, I am <strong>Chiedozie-uchendu Ruth Oluebube.</strong>
             A Web Designer & Executive Virtual Assistant/Administrative Support
             From Nigeria.
           </h1>
           <p class="py-4 tracking-[1px] font-semibold text-[#2c2c2c]">
-            <a href="#" class="cursor-pointer">Download Resume</a>
+            <a
+              href="https://docs.google.com/document/d/1zkgU6ZN73VauZU56nVc321xgqaIGHD1UV3SZA3AIit0/edit?usp=drive_link"
+              class="cursor-pointer"
+              >Download Resume</a
+            >
           </p>
 
           <!-- Social Links -->
@@ -200,7 +241,9 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div class="bg-[#F5F8F1] rounded-xl px-6 py-6">
             <div>
-              <div><h1 class="text-2xl font-bold">Experiences</h1></div>
+              <div id="experience">
+                <a href="#" class="text-2xl font-bold">Experiences</a>
+              </div>
 
               <div class="pt-6 leading-8">
                 <p class="">2021-2022</p>
@@ -225,8 +268,8 @@
           </div>
 
           <div class="bg-[#DECEE0] rounded-xl px-6 py-6">
-            <div class="pt-6 leading-8">
-              <h1 class="text-2xl font-bold">Education</h1>
+            <div class="pt-6 leading-8" id="education">
+              <a href="" class="text-2xl font-bold">Education</a>
               <div>
                 <p class="">2017-2022</p>
 
@@ -242,8 +285,8 @@
           </div>
 
           <div class="bg-[#EFEAEA] rounded-xl px-6 py-6">
-            <div>
-              <h1 class="text-2xl font-bold">Interests</h1>
+            <div id="Interest">
+              <a href="#" class="text-2xl font-bold">Interests</a>
               <p class="pt-6">⚡ Web Development</p>
               <p class="py-6">📚 Digital Marketing</p>
               <p class="pt-6">✈️ Traveling</p>
@@ -718,6 +761,48 @@
     </section>
 
     <section class="w-full">
+      <div class="custom-box mx-auto py-20">
+        <div class="py-10">
+          <div class="relative inline-block">
+            <a href="#" class="no-underline">
+              <h1
+                class="absolute -top-12 -left-5 text-9xl font-bold opacity-20"
+              >
+                03
+              </h1>
+              <h2
+                class="relative text-4xl font-semibold sm:text-2xl md:text-4xl"
+              >
+                My Certificates
+              </h2></a
+            >
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="">
+            <img
+              src="./assets/img/certificate/72-virtual-assistant-certificate-ruth-oluebube-okonkwo.png"
+              class="h-full w-full"
+            />
+          </div>
+          <div class="h-full w-full">
+            <img
+              src="./assets/img/certificate/project management cert.jpeg"
+              class="h-full w-full"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/certificate/ruchinasamuel1998gmail-com-32405-45584-20240709-d0640e01fd_page-0001.jpg"
+              class="h-full w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full">
       <footer class="bg-black custom-box mx-auto">
         <div class="pt-40 pb-20">
           <div class="relative inline-block" id="getintouch">
@@ -725,7 +810,7 @@
               <h1
                 class="absolute -top-12 text-gray-300 -left-5 text-9xl font-bold opacity-20"
               >
-                03
+                04
               </h1>
               <h2
                 class="relative text-4xl text-white font-semibold sm:text-2xl md:text-4xl"
@@ -769,12 +854,16 @@
           <div
             class="bg-[#C93F1C] h-16 flex items-center justify-center text-white"
           >
-            <a>MESSAGE ME</a>
+            <a href="https://wa.me/2349039976051">MESSAGE ME</a>
           </div>
           <div
             class="border border-white text-white h-16 flex items-center justify-center"
           >
-            <a class="uppercase">Get My Cv</a>
+            <a
+              href="https://drive.google.com/file/d/1CFnucE-O-p1W35FI-5j3EiBO3xEbZ-DB/view?usp=sharing"
+              class="uppercase"
+              >Get My Cv</a
+            >
           </div>
         </div>
 
@@ -784,8 +873,6 @@
       </footer>
     </section>
 
-    <script>
-      feather.replace();
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
